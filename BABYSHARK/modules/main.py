@@ -51,10 +51,13 @@ gd_buttons = [
             InlineKeyboardButton("daddy", user_id=OWNER_ID),
             InlineKeyboardButton("helper", url="https://t.me/holaien"),    
         ]
-        ]
-
-
-# ------------------------------------------------------------------------------- #
+]
+@app.on_message(filters.command('ban') & filters.group)
+def ban(bot, message):
+    bot.kick_chat_member(message.chat.id, message.reply_to_message.from_user.id)
+    bot.send_message(message.chat.id, f"(message.reply_to_message.from_user.mention) Banned!") 
+    
+# ------------------------------------------------------------------------------ #
 
 
 @app.on_callback_query(filters.regex("dil_back"))
