@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import os
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, ChatPermissions
 from pyrogram import filters
 from pyrogram.types import Message
 import time
