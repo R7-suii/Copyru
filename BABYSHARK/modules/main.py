@@ -49,7 +49,7 @@ async def start(_, msg):
 gd_buttons = [              
         [
             InlineKeyboardButton("daddy", user_id=OWNER_ID),
-            InlineKeyboardButton("helper", url="https://t.me/HOLAIEN"),    
+            InlineKeyboardButton("helper", url="https://t.me/holaien")    
         ]
 ]
 @app.on_message(filters.command('ban') & filters.group)
