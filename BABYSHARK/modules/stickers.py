@@ -11,12 +11,12 @@ from pyrogram.types import InlineKeyboardButton as IKB
 from pyrogram.types import InlineKeyboardMarkup as IKM
 from pyrogram.types import Message
 
-from Powers import LOGGER
-from Powers.bot_class import Gojo
-from Powers.utils.custom_filters import command
-from Powers.utils.sticker_help import *
-from Powers.utils.web_helpers import get_file_size
-from Powers.vars import Config
+from BABYSHARK import LOGGER
+from BABYSHARK.bot_class import Gojo
+from BABYSHARK.custom_filters import command
+from BABYSHARK.sticker_help import *
+from BABYSHARK.web_helpers import get_file_size
+import Config
 
 
 @Gojo.on_message(command(["stickerinfo","stinfo"]))
